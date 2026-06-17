@@ -110,7 +110,7 @@ async def cb_movie(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     txt = (f"🎬 <b>{m['title']}</b>\n"
            f"📅 Yil: {m.get('year','?')}\n"
            f"🎭 Janr: {m.get('genre','?')}\n\n"
-           f"📝 {m.get('desc','Tavsif yo\'q')}")
+           f"📝 {m.get('desc','Tavsif yoq')}")
     btns = [
         [InlineKeyboardButton("▶️ Ko'rish / Yuklab olish", callback_data=f"dl_{mid}")],
         [InlineKeyboardButton("🔙 Orqaga", callback_data="all_movies")]
